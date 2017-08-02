@@ -20,7 +20,7 @@ decoder = Decoder(config)
 
 # Switch to JSGF grammar
 jsgf = Jsgf(path.join(DATADIR, 'goforward.gram'))
-rule = jsgf.get_rule('goforward.move')
+rule = jsgf.get_rule('goforward.move2')
 fsg = jsgf.build_fsg(rule, decoder.get_logmath(), 7.5)
 fsg.writefile('goforward.fsg')
 
